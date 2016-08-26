@@ -7,9 +7,9 @@ services:
     volumes:
       - ../builds:/app/builds/
     environment:
-      JDK_VERSION: ${JDK_VERSION}
-      JDK_MAJOR: ${JDK_MAJOR}
-      JDK_UPDATE: ${JDK_UPDATE}
-      JDK_BUILD: ${JDK_BUILD}
-      JDK_VERSION_WITH_BUILD: ${JDK_VERSION_WITH_BUILD}
-      JAVA_HOME: /usr/lib/jvm/java-7-openjdk-amd64/
+      - JDK_VERSION
+      - JDK_MAJOR
+      - JDK_UPDATE
+      - JDK_BUILD
+      - JDK_VERSION_WITH_BUILD
+      - JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64/
